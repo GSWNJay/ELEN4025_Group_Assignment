@@ -1,0 +1,2 @@
+#Ignore all extracted CSV files in the repository
+*.csv
