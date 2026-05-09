@@ -4,6 +4,9 @@
 # Allow Task 2 handoff files committed via LFS
 !data/interim/*.csv
 
+# Allow compact Task 3 processed feature tables
+!data/processed/*.csv
+
 # Ignore Python cache files from validation runs
 __pycache__/
 *.pyc
