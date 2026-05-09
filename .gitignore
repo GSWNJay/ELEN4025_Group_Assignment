@@ -1,2 +1,6 @@
 #Ignore all extracted CSV files in the repository
 *.csv
+
+# Ignore Python cache files from validation runs
+__pycache__/
+*.pyc
