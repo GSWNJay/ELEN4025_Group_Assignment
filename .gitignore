@@ -1,2 +1,12 @@
 #Ignore all extracted CSV files in the repository
 *.csv
+
+# Allow Task 2 handoff files committed via LFS
+!data/interim/*.csv
+
+# Ignore Python cache files from validation runs
+__pycache__/
+*.pyc
+
+# CatBoost training logs (generated at runtime)
+catboost_info/
