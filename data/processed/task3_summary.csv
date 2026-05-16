@@ -1,0 +1,5 @@
+Dataset,Cutoff (day),Rows,Features,Favourable (1),Unfavourable (0),Imbalance %,Median total clicks
+week2,13,32593,18,15385,17208,52.8,92.0
+week4,27,32593,18,15385,17208,52.8,176.0
+week6,41,32593,18,15385,17208,52.8,224.0
+week8,55,32593,18,15385,17208,52.8,271.0
