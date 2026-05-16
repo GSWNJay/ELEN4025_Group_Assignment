@@ -10,16 +10,3 @@ python scripts/build_task2_cutoffs.py
 ```
 
 The generated CSVs are written to `data/interim/` and stay untracked because CSV outputs are ignored. See `docs/task2_handoff.md` for the handoff contract.
-
-## Task 3 feature engineering
-
-Surisha's Task 3 script builds leakage-safe processed feature tables from the
-Task 2 handoff files:
-
-```powershell
-python scripts/build_task3_features.py
-```
-
-The generated week 2/4/6/8 feature tables and assignment Features Table are
-written to `data/processed/`. See `docs/task3_handoff.md` for the output and
-validation contract.
