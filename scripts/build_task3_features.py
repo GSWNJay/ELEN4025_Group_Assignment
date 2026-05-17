@@ -350,13 +350,13 @@ def build_features_table(
                 "Outliers count": count_outliers_iqr(col) if dtype == "num" else "N/A",
                 "Duplicate count": "0 (row-level, verified by sanity checks)",
                 "Leakage risk": "None",
-                "Notes": "Imputation deferred to modeling pipeline",
+                "Notes": "Imputation deferred to modeling pipeline (structural NaN only)",
             }
         )
 
     vle_limitation = (
-        "No-activity students get 0; students who withdrew before cutoff may "
-        "appear as 0-click rows. studentRegistration not used."
+        "No-activity students get 0. Limitation: students who withdrew before "
+        "cutoff appear as 0-click rows, not missing. studentRegistration not used."
     )
     vle_meta = [
         (
@@ -370,7 +370,7 @@ def build_features_table(
             "active_days",
             "studentVle.csv",
             "date",
-            "Distinct days with at least one click",
+            "Distinct days with \u22651 click",
             "nunique(date) where date<=cutoff",
         ),
     ] + [
