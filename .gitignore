@@ -1,5 +1,5 @@
-#Ignore all extracted CSV files in the repository
-*.csv
+#Ignore all extracted CSV files in the root folder only
+/*.csv
 
 # Allow Task 2 handoff files committed via LFS
 !data/interim/*.csv
