@@ -1,5 +1,6 @@
 #Ignore all extracted CSV files in the root folder only
 /*.csv
+data/raw/*.csv
 
 # Allow Task 2 handoff files committed via LFS
 !data/interim/*.csv
@@ -7,9 +8,13 @@
 # Allow compact Task 3 processed feature tables
 !data/processed/*.csv
 
+# Ignore the virtual environment folder
+venv/
+
 # Ignore Python cache files from validation runs
 __pycache__/
 *.pyc
 
 # CatBoost training logs (generated at runtime)
 catboost_info/
+
