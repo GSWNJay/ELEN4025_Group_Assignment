@@ -1,0 +1,53 @@
+week_cutoff,baseline_pipeline,changed_pipeline,metric_impacted_most,result_direction_magnitude,auc_mean,auc_delta,f1_mean,f1_delta,interpretation
+2,Random Forest baseline,baseline (all features),AUC,+0.0000,0.7608,0.0,0.681,0.0,Reference pipeline for comparison.
+2,Random Forest baseline,drop student demographics,AUC,-0.0417,0.7191,-0.0417,0.6462,-0.0348,"Demographics add useful information, but less than VLE behaviour."
+2,Random Forest baseline,drop VLE features,AUC,-0.1729,0.5879,-0.1729,0.5526,-0.1284,Large drop indicates VLE engagement is highly important.
+2,Random Forest baseline,drop activity types — keep total + active_days,AUC,-0.0199,0.7409,-0.0199,0.6625,-0.0185,"Performance decreased, so the removed feature contributes useful signal."
+2,Random Forest baseline,drop total + active_days — keep activity types,AUC,-0.0033,0.7575,-0.0033,0.6803,-0.0007,Small change suggests limited individual impact.
+2,Random Forest baseline,drop gender,AUC,-0.0033,0.7575,-0.0033,0.6783,-0.0027,Small change suggests limited individual impact.
+2,Random Forest baseline,drop region,AUC,-0.0006,0.7602,-0.0006,0.6806,-0.0004,Small change suggests limited individual impact.
+2,Random Forest baseline,drop highest_education,AUC,-0.0108,0.75,-0.0108,0.6724,-0.0086,"Performance decreased, so the removed feature contributes useful signal."
+2,Random Forest baseline,drop imd_band,AUC,-0.0056,0.7552,-0.0056,0.6752,-0.0058,"Performance decreased, so the removed feature contributes useful signal."
+2,Random Forest baseline,drop age_band,AUC,-0.0021,0.7587,-0.0021,0.6802,-0.0008,Small change suggests limited individual impact.
+2,Random Forest baseline,drop disability,AUC,-0.0032,0.7576,-0.0032,0.6772,-0.0038,Small change suggests limited individual impact.
+2,Random Forest baseline,drop num_of_prev_attempts,AUC,-0.0035,0.7573,-0.0035,0.6787,-0.0023,Small change suggests limited individual impact.
+2,Random Forest baseline,drop studied_credits,AUC,-0.0117,0.7491,-0.0117,0.6711,-0.0099,"Performance decreased, so the removed feature contributes useful signal."
+4,Random Forest baseline,baseline (all features),AUC,+0.0000,0.7831,0.0,0.7003,0.0,Reference pipeline for comparison.
+4,Random Forest baseline,drop student demographics,AUC,-0.0348,0.7483,-0.0348,0.6668,-0.0335,"Demographics add useful information, but less than VLE behaviour."
+4,Random Forest baseline,drop VLE features,AUC,-0.1952,0.5879,-0.1952,0.5526,-0.1477,Large drop indicates VLE engagement is highly important.
+4,Random Forest baseline,drop activity types — keep total + active_days,AUC,-0.0248,0.7583,-0.0248,0.6776,-0.0227,"Performance decreased, so the removed feature contributes useful signal."
+4,Random Forest baseline,drop total + active_days — keep activity types,AUC,-0.0061,0.777,-0.0061,0.6931,-0.0072,"Performance decreased, so the removed feature contributes useful signal."
+4,Random Forest baseline,drop gender,AUC,-0.0027,0.7804,-0.0027,0.6982,-0.0021,Small change suggests limited individual impact.
+4,Random Forest baseline,drop region,AUC,-0.0025,0.7806,-0.0025,0.6968,-0.0035,Small change suggests limited individual impact.
+4,Random Forest baseline,drop highest_education,AUC,-0.0091,0.774,-0.0091,0.693,-0.0073,"Performance decreased, so the removed feature contributes useful signal."
+4,Random Forest baseline,drop imd_band,AUC,-0.0048,0.7783,-0.0048,0.6984,-0.0019,Small change suggests limited individual impact.
+4,Random Forest baseline,drop age_band,AUC,-0.0021,0.781,-0.0021,0.6975,-0.0028,Small change suggests limited individual impact.
+4,Random Forest baseline,drop disability,AUC,-0.0011,0.782,-0.0011,0.6979,-0.0024,Small change suggests limited individual impact.
+4,Random Forest baseline,drop num_of_prev_attempts,AUC,-0.0016,0.7815,-0.0016,0.6959,-0.0044,Small change suggests limited individual impact.
+4,Random Forest baseline,drop studied_credits,AUC,-0.0104,0.7727,-0.0104,0.69,-0.0103,"Performance decreased, so the removed feature contributes useful signal."
+6,Random Forest baseline,baseline (all features),AUC,+0.0000,0.801,0.0,0.7173,0.0,Reference pipeline for comparison.
+6,Random Forest baseline,drop student demographics,AUC,-0.0317,0.7693,-0.0317,0.6893,-0.028,"Demographics add useful information, but less than VLE behaviour."
+6,Random Forest baseline,drop VLE features,AUC,-0.2131,0.5879,-0.2131,0.5526,-0.1647,Large drop indicates VLE engagement is highly important.
+6,Random Forest baseline,drop activity types — keep total + active_days,AUC,-0.0257,0.7753,-0.0257,0.6937,-0.0236,"Performance decreased, so the removed feature contributes useful signal."
+6,Random Forest baseline,drop total + active_days — keep activity types,AUC,-0.0061,0.7949,-0.0061,0.7091,-0.0082,"Performance decreased, so the removed feature contributes useful signal."
+6,Random Forest baseline,drop gender,AUC,-0.0039,0.7971,-0.0039,0.7134,-0.0039,Small change suggests limited individual impact.
+6,Random Forest baseline,drop region,AUC,-0.0014,0.7996,-0.0014,0.7158,-0.0015,Small change suggests limited individual impact.
+6,Random Forest baseline,drop highest_education,AUC,-0.0080,0.793,-0.008,0.7091,-0.0082,"Performance decreased, so the removed feature contributes useful signal."
+6,Random Forest baseline,drop imd_band,AUC,-0.0034,0.7976,-0.0034,0.7148,-0.0025,Small change suggests limited individual impact.
+6,Random Forest baseline,drop age_band,AUC,-0.0003,0.8007,-0.0003,0.7178,0.0005,Small change suggests limited individual impact.
+6,Random Forest baseline,drop disability,AUC,-0.0006,0.8004,-0.0006,0.7156,-0.0017,Small change suggests limited individual impact.
+6,Random Forest baseline,drop num_of_prev_attempts,AUC,-0.0016,0.7994,-0.0016,0.7176,0.0003,Small change suggests limited individual impact.
+6,Random Forest baseline,drop studied_credits,AUC,-0.0088,0.7922,-0.0088,0.7081,-0.0092,"Performance decreased, so the removed feature contributes useful signal."
+8,Random Forest baseline,baseline (all features),AUC,+0.0000,0.8214,0.0,0.7345,0.0,Reference pipeline for comparison.
+8,Random Forest baseline,drop student demographics,AUC,-0.0277,0.7937,-0.0277,0.7097,-0.0248,"Demographics add useful information, but less than VLE behaviour."
+8,Random Forest baseline,drop VLE features,AUC,-0.2335,0.5879,-0.2335,0.5526,-0.1819,Large drop indicates VLE engagement is highly important.
+8,Random Forest baseline,drop activity types — keep total + active_days,AUC,-0.0302,0.7912,-0.0302,0.7065,-0.028,"Performance decreased, so the removed feature contributes useful signal."
+8,Random Forest baseline,drop total + active_days — keep activity types,AUC,-0.0070,0.8144,-0.007,0.7284,-0.0061,"Performance decreased, so the removed feature contributes useful signal."
+8,Random Forest baseline,drop gender,AUC,-0.0024,0.819,-0.0024,0.7331,-0.0014,Small change suggests limited individual impact.
+8,Random Forest baseline,drop region,AUC,-0.0006,0.8208,-0.0006,0.7349,0.0004,Small change suggests limited individual impact.
+8,Random Forest baseline,drop highest_education,AUC,-0.0069,0.8145,-0.0069,0.7289,-0.0056,"Performance decreased, so the removed feature contributes useful signal."
+8,Random Forest baseline,drop imd_band,AUC,-0.0024,0.819,-0.0024,0.7347,0.0002,Small change suggests limited individual impact.
+8,Random Forest baseline,drop age_band,AUC,-0.0005,0.8209,-0.0005,0.7341,-0.0004,Small change suggests limited individual impact.
+8,Random Forest baseline,drop disability,AUC,-0.0009,0.8205,-0.0009,0.7353,0.0008,Small change suggests limited individual impact.
+8,Random Forest baseline,drop num_of_prev_attempts,AUC,-0.0011,0.8203,-0.0011,0.735,0.0005,Small change suggests limited individual impact.
+8,Random Forest baseline,drop studied_credits,AUC,-0.0088,0.8126,-0.0088,0.7247,-0.0098,"Performance decreased, so the removed feature contributes useful signal."
