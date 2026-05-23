@@ -57,3 +57,32 @@ The generated week 2/4/6/8 feature tables and assignment Features Table are
 written to `data/processed/`. See `docs/task3_handoff.md` for the output and
 validation contract.
 
+## Task 4 Baseline Models
+
+Inathi's Task 4 script trains the standard class-taught pipelines (baseline models) for all weekly cutoffs to establish our benchmark performance:
+
+```powershell
+python scripts/run_task4_baseline_models.py
+```
+
+The generated baseline `.pkl` models are saved to the `models/` directory, and preliminary baseline results are saved to `data/processed/`.
+
+## Task 5 Advanced Models
+Vukosi's Task 5 scripts handle the complex training and hyperparameter search for external advanced machine learning models (like CatBoost):
+```PowerShell
+python scripts/train_pipeline5_catboost.py
+```
+(Note: Other advanced architectures, such as the dynamically tuned Weighted Logistic Regression, are built directly into the main notebook's evaluation loop to integrate smoothly with the ablation study.)
+
+## Tasks 6, 7 & 8: CV, Evaluation, and Insights
+The final phases of the project are bulked together and executed sequentially inside the main control hub: OULAD_Team_4.ipynb. Because these tasks rely heavily on visualizing data and comparing models, they are best kept in a notebook environment rather than standalone scripts.
+
+By running the main notebook from top to bottom, it automatically processes:
+
+Task 6 (CV & Ablation): Thandi's code executes the cross-validation and feature ablation study (this dynamically calls `notebooks/task6_cv_ablation.ipynb` under the hood).
+
+Task 7 (Evaluation & KPIs): Nhlakanipho's logic loads all the generated `.pkl` models from Tasks 4 and 5, compares them fairly, and plots the ROC/AUC curves and confusion matrices.
+
+Task 8 (Thresholds & Insights): Palesa's logic runs threshold sweeps to find the optimal decision boundaries for identifying at-risk students and generates the final error analysis summaries.
+
+All final output graphs and comparison CSVs from these tasks are saved directly into the `results/` directory.
