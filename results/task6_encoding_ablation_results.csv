@@ -1,0 +1,25 @@
+week,week_cutoff,experiment,configuration,model,encoding,evaluation_method,seed,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,f1_mean,f1_std,auc_mean,auc_std
+week2,2,encoding,LogisticRegression_weighted / ordinal,LogisticRegression_weighted,ordinal,5-fold stratified CV,42,0.6842,0.0055,0.6701,0.006,0.6519,0.0082,0.6609,0.0064,0.7497,0.0037
+week2,2,encoding,RandomForest_weighted / ordinal,RandomForest_weighted,ordinal,5-fold stratified CV,42,0.6908,0.004,0.6638,0.0055,0.6991,0.0028,0.681,0.0029,0.7608,0.0058
+week2,2,encoding,LogisticRegression_weighted / onehot,LogisticRegression_weighted,onehot,5-fold stratified CV,42,0.6869,0.0042,0.6713,0.0052,0.6595,0.0039,0.6654,0.0041,0.753,0.0033
+week2,2,encoding,RandomForest_weighted / onehot,RandomForest_weighted,onehot,5-fold stratified CV,42,0.6912,0.0044,0.6634,0.0052,0.702,0.005,0.6822,0.0042,0.7627,0.0063
+week2,2,encoding,LogisticRegression_weighted / target,LogisticRegression_weighted,target,5-fold stratified CV,42,0.6856,0.0047,0.6729,0.0055,0.6499,0.0061,0.6612,0.0051,0.7509,0.0031
+week2,2,encoding,RandomForest_weighted / target,RandomForest_weighted,target,5-fold stratified CV,42,0.6952,0.0055,0.6683,0.0062,0.7035,0.0071,0.6854,0.0055,0.7661,0.0063
+week4,4,encoding,LogisticRegression_weighted / ordinal,LogisticRegression_weighted,ordinal,5-fold stratified CV,42,0.6984,0.0042,0.684,0.0054,0.6713,0.0028,0.6776,0.0038,0.7695,0.0045
+week4,4,encoding,RandomForest_weighted / ordinal,RandomForest_weighted,ordinal,5-fold stratified CV,42,0.708,0.0051,0.6792,0.0043,0.7228,0.0081,0.7003,0.006,0.7831,0.0065
+week4,4,encoding,LogisticRegression_weighted / onehot,LogisticRegression_weighted,onehot,5-fold stratified CV,42,0.7023,0.0031,0.6875,0.0034,0.6771,0.0033,0.6822,0.0033,0.7725,0.0044
+week4,4,encoding,RandomForest_weighted / onehot,RandomForest_weighted,onehot,5-fold stratified CV,42,0.7069,0.0078,0.6774,0.0083,0.7238,0.0074,0.6999,0.0076,0.7837,0.0065
+week4,4,encoding,LogisticRegression_weighted / target,LogisticRegression_weighted,target,5-fold stratified CV,42,0.699,0.0028,0.6852,0.0042,0.6705,0.0018,0.6778,0.002,0.7695,0.0035
+week4,4,encoding,RandomForest_weighted / target,RandomForest_weighted,target,5-fold stratified CV,42,0.7075,0.0047,0.6778,0.0054,0.7249,0.0037,0.7006,0.0043,0.786,0.0055
+week6,6,encoding,LogisticRegression_weighted / ordinal,LogisticRegression_weighted,ordinal,5-fold stratified CV,42,0.7125,0.0043,0.6989,0.0058,0.6868,0.0045,0.6928,0.0041,0.7863,0.0033
+week6,6,encoding,RandomForest_weighted / ordinal,RandomForest_weighted,ordinal,5-fold stratified CV,42,0.7231,0.0045,0.6922,0.0039,0.7444,0.007,0.7173,0.0051,0.801,0.0044
+week6,6,encoding,LogisticRegression_weighted / onehot,LogisticRegression_weighted,onehot,5-fold stratified CV,42,0.7159,0.0031,0.7007,0.0041,0.6948,0.0043,0.6978,0.0032,0.7888,0.0033
+week6,6,encoding,RandomForest_weighted / onehot,RandomForest_weighted,onehot,5-fold stratified CV,42,0.7249,0.0059,0.6942,0.0068,0.7459,0.0066,0.7191,0.0057,0.8024,0.0054
+week6,6,encoding,LogisticRegression_weighted / target,LogisticRegression_weighted,target,5-fold stratified CV,42,0.7108,0.003,0.6981,0.0052,0.6828,0.0039,0.6903,0.0022,0.7855,0.0027
+week6,6,encoding,RandomForest_weighted / target,RandomForest_weighted,target,5-fold stratified CV,42,0.7256,0.0064,0.6944,0.0063,0.7477,0.0094,0.72,0.007,0.8037,0.0052
+week8,8,encoding,LogisticRegression_weighted / ordinal,LogisticRegression_weighted,ordinal,5-fold stratified CV,42,0.7243,0.0033,0.7117,0.0052,0.6992,0.0032,0.7054,0.0027,0.8024,0.0036
+week8,8,encoding,RandomForest_weighted / ordinal,RandomForest_weighted,ordinal,5-fold stratified CV,42,0.7382,0.0054,0.7047,0.0071,0.767,0.009,0.7345,0.0053,0.8214,0.0065
+week8,8,encoding,LogisticRegression_weighted / onehot,LogisticRegression_weighted,onehot,5-fold stratified CV,42,0.7268,0.0025,0.7129,0.0041,0.7054,0.0047,0.7091,0.0026,0.8044,0.0036
+week8,8,encoding,RandomForest_weighted / onehot,RandomForest_weighted,onehot,5-fold stratified CV,42,0.7416,0.0057,0.707,0.0071,0.7731,0.0078,0.7386,0.0055,0.8217,0.0061
+week8,8,encoding,LogisticRegression_weighted / target,LogisticRegression_weighted,target,5-fold stratified CV,42,0.7219,0.0029,0.7103,0.0045,0.6939,0.006,0.702,0.0032,0.8012,0.0029
+week8,8,encoding,RandomForest_weighted / target,RandomForest_weighted,target,5-fold stratified CV,42,0.7418,0.0058,0.7072,0.0079,0.7732,0.0089,0.7387,0.0054,0.8229,0.0064
